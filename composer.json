@@ -18,7 +18,7 @@
                 "PatricPoba\\Mnotify\\MnotifyServiceProvider"
             ],
             "aliases": {
-                "Sms": "PatricPoba\\Mnotify\\Facades"
+                "Sms": "PatricPoba\\Mnotify\\Facades\\Sms"
             }
         }
     },

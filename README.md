@@ -15,7 +15,7 @@ Method 2: Add the following to your project `composer.json` file
 ```
 {
     "require": {
-       "patricpoba/mnotify": "^1.0"
+       "patricpoba/mnotify": "0.1.*"
     }
 }
 ```
