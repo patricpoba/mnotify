@@ -1,5 +1,6 @@
-# mNotify SMS and Voice
-This package enables sending of sms from your laravel application using mnotify.com as a service provider.
+# mNotify SMS  
+This package enables sending of sms from your laravel application using  [mNotify.com](https://www.mnotify.com) as a service provider.
+The Voice feature will be added in future releases
 
 ## Installation
 Download and install composer (from `http://www.getcomposer.org/download`) if you do not have it already.
@@ -88,3 +89,11 @@ Sms::balance();
 Sms::setApiKey('API_KEY_GOES_HERE')->balance();
 
 ```
+
+## Contributing
+
+Thank you for considering contributing to the package! To contribute, fork this repository, write some code and then submit a pull request to the develop branch. :-)
+
+## License
+
+This package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
