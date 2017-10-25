@@ -1,0 +1,26 @@
+{
+    "name": "patricpoba/mnotify",
+    "description": "API for sending sms using mnotify.com as the service provider",
+    "license": "MIT",
+    "type": "library", 
+    "author": {
+        "name": "Patric Poba ",
+        "email": "poba.dev@outlook.com"
+    },
+    "autoload": {
+        "psr-4": {
+            "PatricPoba\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PatricPoba\\Mnotify\\MnotifyServiceProvider"
+            ],
+            "aliases": {
+                "Sms": "PatricPoba\\Mnotify\\Facades"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
