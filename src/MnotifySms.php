@@ -6,6 +6,12 @@ namespace PatricPoba;
   
 class MnotifySms 
 {
+	/**
+     * The package version. 
+     * @var string
+     */
+    const VERSION = '0.1.0';
+
 	const SMS_ENDPOINT = 'https://apps.mnotify.net/smsapi';
 
 	protected $sms_api_key;
@@ -31,7 +37,7 @@ class MnotifySms
 
 		$this->sms_api_key =  $sms_api_key ?: config('mnotify.sms_api_key'); 
 	}
-
+ 
 	/**
 	 * override sender_id parameter
 	 * @param \PatricPoba\Mnotify\Sms
@@ -44,6 +50,10 @@ class MnotifySms
 		return $this;
 	}
 
+	public function getApiKey()
+	{
+		return $this->sms_api_key;
+	}
 
 	public function setApiKey($sms_api_key)
 	{
