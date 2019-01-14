@@ -4,6 +4,7 @@ namespace PatricPoba\Tests;
 
 use PHPUnit\Framework\TestCase;
 use PatricPoba\MnotifySms;
+use PatricPoba\Mnotify\MnotifyServiceProvider;
  
 class MnotifySmsTest extends TestCase
 { 
@@ -47,8 +48,7 @@ class MnotifySmsTest extends TestCase
 	public function test_contructor_arguments_can_be_overridden()
 	{  
 		# re-setup
-		// $this->setup();
-
+		// $this->setup(); 
 		$newSenderId = 'MyBusiness';		
 		$this->mnotifySms->from($newSenderId); 
 		$this->assertEquals($this->mnotifySms->sender_id, $newSenderId, 'Constructor variable $sender_id could not be overridden');
@@ -58,6 +58,7 @@ class MnotifySmsTest extends TestCase
 		$this->assertEquals($this->mnotifySms->getApiKey(), $newApiKey, 'Constructor variable $api_key could not be overridden');
   
 	}
-
+ 
+	
 
 }
