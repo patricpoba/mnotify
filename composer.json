@@ -31,7 +31,5 @@
                 "Sms": "PatricPoba\\Mnotify\\Facades\\Sms"
             }
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
